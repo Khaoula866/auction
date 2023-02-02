@@ -1,7 +1,7 @@
 <div id="countdown{{$articleId}}"></div>
 
 <script>
-    const x = setInterval(function() {
+    setInterval(function() {
         var now = moment();
         var end = moment('{{$time}}');
         var duration = moment.duration(end.diff(now));
