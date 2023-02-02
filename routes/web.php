@@ -27,11 +27,11 @@ Route::middleware('auth')->group(function () {
 
     // article
     Route::get('/articles', [ArticleController::class, 'myArticles'])->name('article.mine');
+    Route::post('/articles/bid', [ArticleController::class, 'bid'])->name('article.bid');
     Route::get('/articles/create', [ArticleController::class, 'create'])->name('article.create');
     Route::get('/articles/{article}', [ArticleController::class, 'edit'])->name('article.edit');
     Route::post('/articles/{article}', [ArticleController::class, 'update'])->name('article.update');
     Route::post('/articles', [ArticleController::class, 'store'])->name('article.store');
-    Route::post('/articles/bid', [ArticleController::class, 'bid'])->name('article.bid');
 });
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
