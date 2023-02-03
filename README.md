@@ -31,23 +31,6 @@ Using docker we could use the tool Sail to setup the project locally
     # This command creates a build directory with a production version of your application
     npm run build
     
-   
-```
-
-## Run the app on the browser
-
-- Website:
-[http://localhost/](http://localhost/)
-- Backoffice
-[http://localhost/admin](http://localhost/admin)
-
-**PS:** To connect using in backoffice you need admin credentials
-
-Use this command to generate a new admin user
-
-```shell
-  # example
-  php artisan users:create --name=admin --email=admin@gmail.com --password=123456
 ```
 
 ## Scheduler
