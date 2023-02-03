@@ -16,11 +16,22 @@ The app database is structured in these tables:
 Using docker we could use the tool Sail to setup the project locally
 
 ```shell
-    # install sail
-    composer require laravel/sail
+    # To run all of outstanding migrations, execute the migrate Artisan command:
+    php artisan migrate
     
-    # install dependencies
-    ./vendor/bin/sail up -d
+    # Create user admin
+    php artisan users:create --name=admin --email=admin@gmail.com --password=123456
+    
+    # Create storage symlink in public folder
+    php artisan storage:link
+    
+    # This command downloads a package and its dependencies
+    npm install
+    
+    # This command creates a build directory with a production version of your application
+    npm run build
+    
+   
 ```
 
 ## Run the app on the browser
