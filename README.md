@@ -31,8 +31,8 @@ Using docker we could use the tool Sail to setup the project locally
     # This command creates a build directory with a production version of your application
     npm run build
     
-    # 
-    php  
+    # The Laravel PHP artisan serve command helps running applications on the PHP development server
+    php  artisan serve 
     
 ```
 
