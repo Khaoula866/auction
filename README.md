@@ -16,6 +16,10 @@ The app database is structured in these tables:
 Using docker we could use the tool Sail to setup the project locally
 
 ```shell
+
+    # The install command reads the composer.json file from the current directory, resolves the dependencies, and installs them into vendor . php composer.phar               install.
+    composer install
+
     # To run all of outstanding migrations, execute the migrate Artisan command:
     php artisan migrate
     
